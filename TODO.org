@@ -1,0 +1,57 @@
+#+TITLE: Menu for Closh
+
+* Starters
+
+** closhutils
+
+  Something akin to GNU coreutils. Eases learning.
+  For the recall, the tools included are:
+
+#+INCLUDE: "coreutils.lst" example
+
+
+* Main dishes
+
+** Primitives
+
+  We should be able to writer in Clojure something like the following:
+
+#+BEGIN_SRC emacs-lisp
+  (pipe (ls -lR) (grep /bin :stderr null) (sort))
+#+END_SRC
+
+** Shell parser
+
+  Can grok shell grammar, and converts this into an AST.
+
+  The book on bash I have has the complete BNF grammar.
+
+** Shell interpreter
+
+  Converts the AST into call to our primitives.
+
+  The above example would be the translation of:
+
+#+BEGIN_SRC sh
+  ls -lR | grep /bin 2>/dev/null |sort
+#+END_SRC
+
+** Job control
+
+   [[www.linusakesson.net/programming/tty/][This article]] has detailed information on how it works in low level.
+
+*** session :hard:
+*** pipes :hard:
+*** tty :hard:
+*** signals :hard:
+
+
+* Desserts
+
+** Compiler
+
+   Turns shell scripts into uber jar that can be run with java -jar.
+
+** Line edition
+
+   Might be a wonderful excuse to complete an old project. Or not.
