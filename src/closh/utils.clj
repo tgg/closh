@@ -3,3 +3,6 @@
 
 (load "commands/df")
 (load "commands/yes")
+(load "commands/false")
+(load "commands/true")
+
