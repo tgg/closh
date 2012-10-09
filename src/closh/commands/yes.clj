@@ -3,5 +3,5 @@
 (in-ns 'closh.utils)
 
 (defn cmd:yes
-  ([] (yes "y"))
+  ([] (cmd:yes "y"))
   ([s] (repeat s)))
