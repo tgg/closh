@@ -2,6 +2,6 @@
 
 (in-ns 'closh.utils)
 
-(defn yes
+(defn cmd:yes
   ([] (yes "y"))
   ([s] (repeat s)))

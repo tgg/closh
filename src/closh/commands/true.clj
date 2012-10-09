@@ -2,5 +2,5 @@
 
 (in-ns 'closh.utils)
 
-(defn true? [& _]
+(defn cmd:true [& _]
   0)

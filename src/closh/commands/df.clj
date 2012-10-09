@@ -15,7 +15,7 @@
    :used (kb (- (.getTotalSpace store) (.getUnallocatedSpace store)))
    :avail (kb (.getUsableSpace store))})
 
-(defn df
+(defn cmd:df
   ([]
      (map storemap (.. FileSystems getDefault getFileStores)))
   ([& paths]
