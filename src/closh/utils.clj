@@ -1,6 +1,7 @@
 (ns closh.utils
   (:require [clojure.string :as str]))
 
+(load "commands/basename")
 (load "commands/df")
 (load "commands/dirname")
 (load "commands/yes")
