@@ -1,4 +1,4 @@
-* CoreUtils commands implementation [2%]
+* CoreUtils commands implementation [4%]
 
 ** TODO comm
 ** TODO timeout
@@ -36,7 +36,7 @@
 ** TODO unexpand
 ** TODO stdbuf
 ** TODO [
-** TODO basename
+** DONE basename
 ** TODO factor
 ** TODO sum
 ** TODO od
@@ -56,7 +56,7 @@
 ** TODO nohup
 ** TODO nl
 ** TODO stat
-** TODO dirname
+** DONE dirname
 ** TODO pr
 ** TODO fmt
 ** TODO split
